@@ -1,0 +1,9 @@
+<h1>Edit My Profile</h1>
+
+<%= form_for @user, url: { action: 'update' }, method: :patch do |form| %>
+  <%= render partial: '/users/form', object: form %>
+
+  <div class="submit-field">
+    <%= form.submit "Save", class: "btn btn-default btn-primary float-right" %>
+  </div>
+<% end %>
