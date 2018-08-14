@@ -1,8 +1,8 @@
-require "rails_helper"
+require 'rails_helper'
 
-feature "User updates" do
+feature 'User updates profile' do
   feature 'image' do
-    scenario "successfully" do
+    scenario 'successfully' do
       user = create(:user, image: 'https://placehold.it/200x200.png')
       visit '/edit'
 
@@ -16,7 +16,7 @@ feature "User updates" do
   end
 
   feature 'first name' do
-    scenario "successfully" do
+    scenario 'successfully' do
       user = create(:user, first_name: 'Pepe', last_name: 'Sierra')
       visit '/edit'
 
@@ -30,7 +30,7 @@ feature "User updates" do
   end
 
   feature 'last name' do
-    scenario "successfully" do
+    scenario 'successfully' do
       user = create(:user, first_name: 'Pepe', last_name: 'Sierra')
       visit '/edit'
 
@@ -44,7 +44,7 @@ feature "User updates" do
   end
 
   feature 'title' do
-    scenario "successfully" do
+    scenario 'successfully' do
       user = create(:user, title: 'Developer')
       visit '/edit'
 
@@ -58,7 +58,7 @@ feature "User updates" do
   end
 
   feature 'description' do
-    scenario "successfully" do
+    scenario 'successfully' do
       user = create(:user, description: 'I code.')
       visit '/edit'
 

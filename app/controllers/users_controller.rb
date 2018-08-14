@@ -3,6 +3,24 @@ class UsersController < ApplicationController
     @user = user
   end
 
+  def new
+    if User.count > 0
+      redirect_to '/edit'
+    else
+      @user = User.new
+    end
+  end
+
+  def create
+    @user = User.new(user_params)
+
+    if @user.save
+      redirect_to root_path, notice: 'Your profile has been created.'
+    else
+      render :new
+    end
+  end
+
   def edit
     @user = user
   end
