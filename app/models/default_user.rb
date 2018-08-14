@@ -14,4 +14,8 @@ class DefaultUser
   def description
     'Description of the user\'s job.'
   end
+
+  def twitter_account
+    'TwitterSupport'
+  end
 end

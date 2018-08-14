@@ -18,9 +18,16 @@ describe DefaultUser do
       expect(DefaultUser.new.title).to eq 'Job Title'
     end
   end
+
   describe '#description' do
     it "returns 'Description of the user's job.' when called" do
       expect(DefaultUser.new.description).to eq 'Description of the user\'s job.'
+    end
+  end
+
+  describe '#twitter_account' do
+    it "returns 'TwitterSupport' when called" do
+      expect(DefaultUser.new.twitter_account).to eq 'TwitterSupport'
     end
   end
 end
