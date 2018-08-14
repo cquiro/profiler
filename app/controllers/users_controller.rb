@@ -10,6 +10,8 @@ class UsersController < ApplicationController
   def update
     if user.update_attributes(user_params)
       redirect_to root_path, notice: 'Your profile has been updated.'
+    else
+      render :edit
     end
   end
 
