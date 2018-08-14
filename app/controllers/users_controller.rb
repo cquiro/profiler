@@ -1,6 +1,7 @@
 class UsersController < ApplicationController
   def show
     @user = user
+    # RetrieveTweetsService.new(user).perform ==> this is WIP
   end
 
   def new

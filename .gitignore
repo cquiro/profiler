@@ -28,3 +28,6 @@
 
 # Ignore Vim's swap files
 *.swp
+
+# Ignore env variables
+.env

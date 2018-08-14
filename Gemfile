@@ -13,10 +13,12 @@ gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.5'
 gem 'bootstrap', '~> 4.0.0'
 gem 'active_model_serializers', '~> 0.10.7'
+gem 'twitter', '~> 6.2.0'
 
 gem 'bootsnap', '>= 1.1.0', require: false
 
 group :development, :test do
+  gem 'dotenv-rails', '~> 2.5.0'
   gem 'pry-rails'
   gem 'factory_bot_rails', '~> 4.10.0'
   gem 'rspec-rails', '~> 3.8.0'
