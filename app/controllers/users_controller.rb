@@ -1,6 +1,7 @@
 class UsersController < ApplicationController
   def show
     @user = user
+    @tweets = load_tweets(@user.twitter_account)
   end
 
   def new
@@ -48,5 +49,9 @@ class UsersController < ApplicationController
       :description,
       :twitter_account
     )
+  end
+
+  def load_tweets(twitter_handle)
+    TweetsLoaderService.new(twitter_handle, 5).perform
   end
 end

@@ -1,6 +1,6 @@
 class DefaultUser
   def image
-    Faker::Placeholdit.image("200x200")
+    'https://placehold.it/200x200.png'
   end
 
   def full_name
