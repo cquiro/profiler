@@ -6,7 +6,7 @@ class UsersController < ApplicationController
 
   def new
     if User.count > 0
-      redirect_to '/edit'
+      redirect_to edit_path
     else
       @user = User.new
     end
@@ -23,7 +23,11 @@ class UsersController < ApplicationController
   end
 
   def edit
-    @user = user
+    if User.count == 0
+      redirect_to new_path
+    else
+      @user = user
+    end
   end
 
   def update
