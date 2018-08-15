@@ -57,3 +57,7 @@ The app includes an API with two endpoints exposed:
 
 - You need to get authentication credentials from Twitter and store them in a .env file.
 
+## View Demo at:
+
+https://protected-citadel-31975.herokuapp.com/
+
